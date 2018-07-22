@@ -3,16 +3,16 @@ require "formula"
 class Cpuburn < Formula
   homepage "http://packages.debian.org/stable/misc/cpuburn"
   url "http://ftp.de.debian.org/debian/pool/main/c/cpuburn/cpuburn_1.4a.orig.tar.gz"
-  sha1 "bdec2233b5f473735c47ca6150c244f33a1fd82b"
+  sha256 "eb191ce9bfbf453d30c218c3419573df102a3588f96c4a43686c84bb9da4bed6"
 
   patch do
-    url "http://patch-tracker.debian.org/patch/series/dl/cpuburn/1.4a-3/01-variables.patch"
-    sha1 "261dcf6d11aff9c2c315acf163b17f9fb3c8937d"
+    url "https://sources.debian.org/data/main/c/cpuburn/1.4a-3/debian/patches/01-variables.patch"
+    sha256 "7022b7191746cc5a159fe4db7de556f8f36b95e9e2aa6d214a80c179f55c61dc"
   end
 
   patch do
-    url "http://patch-tracker.debian.org/patch/series/dl/cpuburn/1.4a-3/02-m32.patch"
-    sha1 "bc3551597bab597fc6149a66413c76ad9a7208d5"
+    url "https://sources.debian.org/data/main/c/cpuburn/1.4a-3/debian/patches/02-m32.patch"
+    sha256 "b0b94073f6f14860129ee8858a0ca62a6a9e7ed1e61f6cc4c5716083dc0a3b60"
   end
 
   patch :DATA
